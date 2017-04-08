@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26476C74B4FB5B5EB12931C4 /* Pods_Image_Filtering_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73013F8197A08F2E6CEA80 /* Pods_Image_Filtering_App.framework */; };
 		6A3640AF1E97323100052728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3640AE1E97323100052728 /* AppDelegate.swift */; };
 		6A3640B11E97323100052728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3640B01E97323100052728 /* ViewController.swift */; };
 		6A3640B41E97323100052728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3640B21E97323100052728 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C73013F8197A08F2E6CEA80 /* Pods_Image_Filtering_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Image_Filtering_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3640AB1E97323000052728 /* Image Filtering App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Filtering App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3640AE1E97323100052728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A3640B01E97323100052728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6A3640B81E97323100052728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A3640BB1E97323100052728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A3640BD1E97323100052728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C466FCB6F0D58D2156ECB39D /* Pods-Image Filtering App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Filtering App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Image Filtering App/Pods-Image Filtering App.debug.xcconfig"; sourceTree = "<group>"; };
+		F3CAF0C579F90758BD25DEE7 /* Pods-Image Filtering App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Filtering App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Image Filtering App/Pods-Image Filtering App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26476C74B4FB5B5EB12931C4 /* Pods_Image_Filtering_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4CAAD5D621C4B4E796806C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C466FCB6F0D58D2156ECB39D /* Pods-Image Filtering App.debug.xcconfig */,
+				F3CAF0C579F90758BD25DEE7 /* Pods-Image Filtering App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62AA5D7FC15346F6D379954A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C73013F8197A08F2E6CEA80 /* Pods_Image_Filtering_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A3640A21E97323000052728 = {
 			isa = PBXGroup;
 			children = (
 				6A3640AD1E97323000052728 /* Image Filtering App */,
 				6A3640AC1E97323000052728 /* Products */,
+				1B4CAAD5D621C4B4E796806C /* Pods */,
+				62AA5D7FC15346F6D379954A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A3640C01E97323100052728 /* Build configuration list for PBXNativeTarget "Image Filtering App" */;
 			buildPhases = (
+				E0E2095F9F1A7B12FFCB5D89 /* [CP] Check Pods Manifest.lock */,
 				6A3640A71E97323000052728 /* Sources */,
 				6A3640A81E97323000052728 /* Frameworks */,
 				6A3640A91E97323000052728 /* Resources */,
+				F1A48EFC2381FF81B7A74AD0 /* [CP] Embed Pods Frameworks */,
+				27A17D64F46485B08EFF8792 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A17D64F46485B08EFF8792 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Image Filtering App/Pods-Image Filtering App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E2095F9F1A7B12FFCB5D89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A48EFC2381FF81B7A74AD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Image Filtering App/Pods-Image Filtering App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A3640A71E97323000052728 /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		6A3640C11E97323100052728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C466FCB6F0D58D2156ECB39D /* Pods-Image Filtering App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AQF45K48EJ;
@@ -278,6 +354,7 @@
 		};
 		6A3640C21E97323100052728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3CAF0C579F90758BD25DEE7 /* Pods-Image Filtering App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AQF45K48EJ;

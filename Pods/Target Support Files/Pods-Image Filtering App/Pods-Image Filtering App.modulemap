@@ -1,0 +1,6 @@
+framework module Pods_Image_Filtering_App {
+  umbrella header "Pods-Image Filtering App-umbrella.h"
+
+  export *
+  module * { export * }
+}
